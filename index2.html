@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Agència de Viatges</title>
+
+    
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.php">Inici</a>
+            </li>
+
+            <li>
+                <a href="destinacions.php">Destinacions</a>
+            </li>
+
+            <li>
+                <a href="contacte.php">Contacte</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <section class="hero">
+
+            <h1>Agència de Viatges</h1>
+
+            <p>
+                Descobreix les millors destinacions
+                per a les teves vacances.
+            </p>
+
+        </section>
+
+        <section class="cards">
+
+            <article class="card">
+
+                <h2>París</h2>
+
+                <p>
+                    Visita la Torre Eiffel i els
+                    seus museus.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Roma</h2>
+
+                <p>
+                    Descobreix la història de
+                    l'Imperi Romà.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Londres</h2>
+
+                <p>
+                    Gaudeix dels seus monuments
+                    i mercats.
+                </p>
+
+            </article>
+
+        </section>
+
+        <h2>Destinacions disponibles</h2>
+
+        <table>
+
+            <tr>
+                <th>Ciutat</th>
+                <th>Dies</th>
+                <th>Preu</th>
+            </tr>
+
+            <tr>
+                <td>París</td>
+                <td>5</td>
+                <td>850 €</td>
+            </tr>
+
+            <tr>
+                <td>Roma</td>
+                <td>4</td>
+                <td>700 €</td>
+            </tr>
+
+            <tr>
+                <td>Londres</td>
+                <td>6</td>
+                <td>950 €</td>
+            </tr>
+
+        </table>
+
+        <h2>Contacta amb nosaltres</h2>
+
+        <form id="formulari">
+
+            <input
+                type="text"
+                id="nom"
+                placeholder="Nom">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email">
+
+            <textarea
+                id="missatge"
+                placeholder="Missatge"></textarea>
+
+            <button type="button"
+                    id="btnEnviar">
+
+                Enviar
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 Agència de Viatges
+        </p>
+
+    </footer>
+
+    <script>
+
+        document
+            .getElementById("btnEnviar")
+            .addEventListener(
+                "click",
+                function(){
+
+                    let nom =
+                        document.getElementById("nom")
+                        .value
+                        .trim();
+
+                    if(nom===""){
+
+                        alert(
+                            "Introdueix el teu nom"
+                        );
+
+                        return;
+                    }
+
+                    alert(
+                        "Missatge enviat correctament"
+                    );
+
+                }
+            );
+
+    </script>
+
+</body>
+
+</html>
