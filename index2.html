@@ -5,14 +5,19 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Agència de Viatges</title>
 
-    
+
 
 </head>
+<!-- Comandos de GIT:
+ git add .
+git commit -m "Versión estable"
+git tag v1.0  -m “…”
+git push
+git push --tags -->
 
 <body>
 
@@ -120,22 +125,13 @@
 
         <form id="formulari">
 
-            <input
-                type="text"
-                id="nom"
-                placeholder="Nom">
+            <input type="text" id="nom" placeholder="Nom">
 
-            <input
-                type="email"
-                id="email"
-                placeholder="Email">
+            <input type="email" id="email" placeholder="Email">
 
-            <textarea
-                id="missatge"
-                placeholder="Missatge"></textarea>
+            <textarea id="missatge" placeholder="Missatge"></textarea>
 
-            <button type="button"
-                    id="btnEnviar">
+            <button type="button" id="btnEnviar">
 
                 Enviar
 
@@ -159,14 +155,14 @@
             .getElementById("btnEnviar")
             .addEventListener(
                 "click",
-                function(){
+                function () {
 
                     let nom =
                         document.getElementById("nom")
-                        .value
-                        .trim();
+                            .value
+                            .trim();
 
-                    if(nom===""){
+                    if (nom === "") {
 
                         alert(
                             "Introdueix el teu nom"

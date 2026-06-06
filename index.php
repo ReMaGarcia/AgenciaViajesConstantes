@@ -1,4 +1,6 @@
-<?php include "includes/header.php" ?>
+<?php 
+require_once "config.php";
+include BASE_PATH . "includes/header.php"; ?>
 
 <section class="hero">
 
@@ -47,3 +49,7 @@
             </article>
 
         </section>
+
+<?php include BASE_PATH . "includes/destins.php";
+include BASE_PATH . "includes/formcontacte.php";
+include BASE_PATH . "includes/footer.php"; ?>
