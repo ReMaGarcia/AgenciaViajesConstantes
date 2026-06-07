@@ -7,7 +7,7 @@
         </p>
 
     </footer>
-<script src="<?= JS_PATH ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= JS_PATH ?>"></script>
 </body>
-
 </html>

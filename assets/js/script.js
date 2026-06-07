@@ -8,10 +8,13 @@ function validarForm() {
 
     const errorNom = document.getElementById("error-nom");
     const inputNom = document.getElementById("nom");
+
     const errorMail = document.getElementById("error-email");
     const inputMail = document.getElementById("email");
+
     const errorText = document.getElementById("error-text");
     const inputText = document.getElementById("missatge");
+
     const mensajeExitoso = document.getElementById("formu-enviado");
 
     //limpiar inputs
@@ -29,7 +32,7 @@ function validarForm() {
         inputNom.style.border = "2px solid red";
         return false;
         //el css del span en la hoja de estilo pero el input mejor controlar el estilo desde aquí.
-    } else{
+    } else {
         inputNom.style.border = "2px solid green";
     }
 
@@ -37,7 +40,7 @@ function validarForm() {
         inputNom.style.border = "2px solid red";
         errorNom.textContent = "El nombre debe incluir un mínimo de 3 carácteres";
         return false;
-    } else{
+    } else {
         inputNom.style.border = "2px solid green";
     }
 
@@ -45,7 +48,7 @@ function validarForm() {
         inputNom.style.border = "2px solid red";
         errorNom.textContent = "Has superado el máximo de 50 carácteres.";
         return false;
-    } else{
+    } else {
         inputNom.style.border = "2px solid green";
     }
 
@@ -54,8 +57,8 @@ function validarForm() {
         errorNom.textContent = "carácteres no permitidos: Utilice letras,guiones,espacios,acentos,mayúsculas y mínusculas";
         return false;
         //si niego la expresion del regexp no necesito declarar la constante.
-    } else{
-        inputMail.style.border = "2px solid green";
+    } else {
+        inputNom.style.border = "2px solid green";
     }
 
     //validar email:
@@ -64,7 +67,7 @@ function validarForm() {
         errorMail.textContent = "Introduce un email por favor.";
         inputMail.style.border = "2px solid red";
         return false;
-    } else{
+    } else {
         inputMail.style.border = "2px solid green";
     }
 
@@ -72,15 +75,15 @@ function validarForm() {
         errorMail.textContent = "Has superado el límite de carácteres (100)";
         inputMail.style.border = "2px solid red";
         return false;
-    } else{
+    } else {
         inputMail.style.border = "2px solid green";
     }
 
     if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(correo)) {
         errorMail.textContent = "Email no valido. Ej: formato@valido.es";
         inputMail.style.border = "2px solid red";
-        return false;  
-    } else{
+        return false;
+    } else {
         inputMail.style.border = "2px solid green";
     }
 
@@ -90,7 +93,7 @@ function validarForm() {
         errorText.textContent = "El mensaje no puede superar el límite máximo de carácteres (500)";
         inputText.style.border = "2px solid red";
         return false;
-    } else{
+    } else {
         inputText.style.border = "2px solid green";
     }
 
@@ -98,7 +101,7 @@ function validarForm() {
         errorText.textContent = "No se permite código HTML";
         inputText.style.border = "2px solid red";
         return false;
-    } else{
+    } else {
         inputText.style.border = "2px solid green";
     }
 
@@ -141,31 +144,30 @@ function validarForm() {
 
 
 
+// document
+//     .getElementById("btnEnviar")
+//     .addEventListener(
+//         "click",
+//         function(){
 
-        // document
-        //     .getElementById("btnEnviar")
-        //     .addEventListener(
-        //         "click",
-        //         function(){
+//             let nom =
+//                 document.getElementById("nom")
+//                 .value
+//                 .trim();
 
-        //             let nom =
-        //                 document.getElementById("nom")
-        //                 .value
-        //                 .trim();
+//             if(nom===""){
 
-        //             if(nom===""){
+//                 alert(
+//                     "Introdueix el teu nom"
+//                 );
 
-        //                 alert(
-        //                     "Introdueix el teu nom"
-        //                 );
+//                 return;
+//             }
 
-        //                 return;
-        //             }
+//             alert(
+//                 "Missatge enviat correctament"
+//             );
 
-        //             alert(
-        //                 "Missatge enviat correctament"
-        //             );
-
-        //         }
-        //     );
+//         }
+//     );
 

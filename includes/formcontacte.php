@@ -1,4 +1,4 @@
-<h2>Contacta amb nosaltres</h2> este es el mio!!!
+<h2>Contacta amb nosaltres</h2>
 
         <form id="formulari" action="registros.php" method="post" onsubmit="return validarForm()"> <!--con on submit validaré el formulario antes de que se envien los datos. Utilizo return para manejar el envio. Si algo ha ido mal no lo envia y me devuelve false.-->
 

@@ -1,55 +1,62 @@
-<?php 
+<?php
 require_once "config.php";
 include BASE_PATH . "includes/header.php"; ?>
 
 <section class="hero">
 
-            <h1>Agència de Viatges</h1>
+    <h1>Agència de Viatges</h1>
 
-            <p>
-                Descobreix les millors destinacions
-                per a les teves vacances.
-            </p>
+    <p>
+        Descobreix les millors destinacions
+        per a les teves vacances.
+    </p>
 
-        </section>
+</section>
 
-        <section class="cards">
+<section class="cards">
 
-            <article class="card">
+    <article class="cardparis">
 
-                <h2>París</h2>
+        <h2>París</h2>
 
-                <p>
-                    Visita la Torre Eiffel i els
-                    seus museus.
-                </p>
+        <p>
+            Visita la Torre Eiffel i els
+            seus museus.
+        </p>
 
-            </article>
+    </article>
 
-            <article class="card">
+    <article class="cardroma">
 
-                <h2>Roma</h2>
+        <h2>Roma</h2>
 
-                <p>
-                    Descobreix la història de
-                    l'Imperi Romà.
-                </p>
+        <p>
+            Descobreix la història de
+            l'Imperi Romà.
+        </p>
 
-            </article>
+    </article>
 
-            <article class="card">
+    <article class="cardlondres">
 
-                <h2>Londres</h2>
+        <h2>Londres</h2>
 
-                <p>
-                    Gaudeix dels seus monuments
-                    i mercats.
-                </p>
+        <p>
+            Gaudeix dels seus monuments
+            i mercats.
+        </p>
 
-            </article>
+    </article>
 
-        </section>
+</section>
 
-<?php include BASE_PATH . "includes/destins.php";
-include BASE_PATH . "includes/formcontacte.php";
-include BASE_PATH . "includes/footer.php"; ?>
+<div class="table-form"> 
+    <div>
+        <?php include BASE_PATH . "includes/destins.php";?>
+    </div>
+    <div>
+        <?php include BASE_PATH . "includes/formcontacte.php";?>
+    </div>
+</div>
+
+<?php include BASE_PATH . "includes/footer.php"; ?>
