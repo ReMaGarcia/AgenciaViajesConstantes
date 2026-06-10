@@ -57,6 +57,8 @@ include BASE_PATH . "includes/header.php"; ?>
     <div>
         <?php include BASE_PATH . "includes/formcontacte.php";?>
     </div>
+    <?php include BASE_PATH . "includes/comentaris.php" ?>
 </div>
+
 
 <?php include BASE_PATH . "includes/footer.php"; ?>

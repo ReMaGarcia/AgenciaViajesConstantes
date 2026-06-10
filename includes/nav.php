@@ -17,6 +17,9 @@
                 <li class="nav-item">
                     <a href="<?= BASE_URL ?>views/contacte.php">Contacte</a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= BASE_URL ?>views/coments.php">Contacte</a>
+                </li>
             </ul>
         </div>
     </div>
